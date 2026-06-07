@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <script src="script.js" async></script>
+        <script type="module" src="script.js"></script>
         <title>Task Tracker</title>
     </head>
     <body>
@@ -13,22 +13,7 @@
             <input type="text" id="task-name" placeholder="Start writing and press Enter to create task">
         </div>
         <div class="task-list" id="task-list">
-            <!-- Tasks will be added here dynamically -->   
-             <input type="checkbox" id="task-1">
-             <label for="task-1">New task is created and added to the list</label>
-             <input type="button" id="delete-1" value="Delete">
-             <input type="checkbox" id="task-2">
-             <label for="task-2">Clicking the checkbox toggles the completeness</label>
-             <input type="button" id="delete-2" value="Delete">
-             <input type="checkbox" id="task-3">
-             <label for="task-3">Delete button will delete the task from the list</label>
-             <input type="button" id="delete-3" value="Delete">
-             <input type="checkbox" id="task-4">
-             <label for="task-4">Complete tasks show at the end with strikethrough </label>
-             <input type="button" id="delete-4" value="Delete">
-             <input type="checkbox" id="task-5">
-             <label for="task-5">Marking in complete will put it back in pending list</label>
-             <input type="button" id="delete-5" value="Delete">
+            <!-- Tasks will be added here dynamically -->
         </div>
     </body>
 </html>

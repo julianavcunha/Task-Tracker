@@ -9,26 +9,37 @@ let taskList = [
   {id: 'task-5', task: 'Marking in complete will put it back in pending list', status: 'incomplete'}
 ];
 
-function addTask(task) {
-  taskList.push({
-    id: `task-${taskList.length + 1}`,
-    task: task,
-    status: 'incomplete'
-  });
+function addTask(taskList) {
+  for (let i = 0; i < taskList.length; i++) {
+    if (i > taskList.length) {
+      taskList.push(i++); {
+        return taskList; 
+      }
+    }
+  }
+  
+}
+  
+    
 
-  return taskList;
+function deleteTask(taskList) {
+  const deleteButton = document.getElementsByName('Delete');
+  if (taskList.task === deleteButton)  {
+    return taskList.splice(taskList.task, 1);
+  }
+  else {
+    null
+  }
+  
 }
 
-const deleteTask = (id) => {
-  taskList = taskList.filter(task => task.id !== id);
-  return taskList;
-};
+('Delete').addEventListener('click', deleteTask); 
 
 function completeTask() {
 
 }
 
-function toggleCheckBox(id) {
+function toggleCheckBox(taskList, id) {
   id.addEventListener('click', () => {
 
   })
